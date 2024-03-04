@@ -7,9 +7,17 @@ public class Masters {
         this.id = id;
         this.Fname = name;
     }
-    public int getId(){return this.id;}
-    public void setId(int id){this.id = id;}
-    public String getName(){return this.Fname;}
+    public int getId(){
+        return this.id;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+    public String getName(){
+        return this.Fname;
+    }
 
-    public void setName(String name) {this.Fname = name;}
+    public void setName(String name) {
+        this.Fname = name;
+    }
 }

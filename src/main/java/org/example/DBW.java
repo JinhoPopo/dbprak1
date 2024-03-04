@@ -7,21 +7,15 @@ public class DBW {
     }
 
     public static void printMaster(Masters master) {
-        PrintStream var10000 = System.out;
-        int var10001 = master.getId();
-        var10000.println("" + var10001 + " " + master.getName());
+        System.out.println(master.getId()+" "+ master.getName());
     }
 
     public static void printCliet(Cliets cliet) {
-        PrintStream var10000 = System.out;
-        int var10001 = cliet.getId();
-        var10000.println("" + var10001 + " " + cliet.getName() + " " + cliet.getIdMaster().getName());
+        System.out.println(cliet.getId()+""+cliet.getName()+cliet.getIdMaster());
     }
 
     public static void printClietMaster(Cliets cliet) {
-        PrintStream var10000 = System.out;
-        int var10001 = cliet.getId();
-        var10000.print("" + var10001 + " " + cliet.getName() + " ");
+        System.out.println(cliet.getId()+""+cliet.getName()+"");
         printMaster(cliet.getIdMaster());
     }
 }
